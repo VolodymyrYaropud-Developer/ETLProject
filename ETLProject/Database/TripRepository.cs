@@ -120,7 +120,6 @@ namespace ETLProject.Database
 
             foreach (DataColumn col in table.Columns)
             {
-                Console.WriteLine($"Column: {col.ColumnName}");
                 bulk.ColumnMappings.Add(col.ColumnName, col.ColumnName);
             }
 
